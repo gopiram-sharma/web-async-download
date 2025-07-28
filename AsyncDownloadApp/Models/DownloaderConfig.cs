@@ -10,5 +10,6 @@ namespace AsyncDownload.Models
         public int MaxConcurrentDownloads { get; set; } = 3; // Default value if not in config
         public int TimeoutSeconds { get; set; } = 5;       // Default value if not in config
         public int MaxContentBytes { get; set; } = 2 * 1024 * 1024;       // Default value if not in config
+        public int MaxRetries { get; set; } = 1;       // Default value if not in config
     }
 }
